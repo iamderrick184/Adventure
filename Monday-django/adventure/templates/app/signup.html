@@ -1,0 +1,12 @@
+{% extends 'app/base.html'%}
+
+{% block header %}  SIGNUP {% endblock %}
+
+{% block content %}
+<h1>Welcome to my registration</h1>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+<input type="submit" value="Signup">    
+</form>
+{% endblock %}
