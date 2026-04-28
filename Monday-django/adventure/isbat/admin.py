@@ -1,5 +1,5 @@
 from django.contrib import admin
-from isbat.models import person,registrtaion
+from isbat.models import person,registrtaion,Products
 # Register your models here.
 
 class PersonAdmin(admin.ModelAdmin):
@@ -10,6 +10,7 @@ class RegistrationAdmin(admin.ModelAdmin):
 
 class ProdAdmin(admin.ModelAdmin):
     list_display=['prodname','productcat','prodyear']
+
 
 
 admin.site.register(person,PersonAdmin)
